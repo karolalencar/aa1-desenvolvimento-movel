@@ -1,7 +1,7 @@
 # Desenvolvimento Móvel
 
 ## Grupo
-Emilia , 
+Emilia , \
 Karulina Alencar, 757922
 
 ## Build
