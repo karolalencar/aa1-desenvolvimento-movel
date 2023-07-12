@@ -10,4 +10,5 @@
     <color name="lightGreen">#DEFFF7</color>
     <color name="red">#E70000</color>
     <color name="gray">#F0F0F5</color>
+    <color name="greenBtn">#4D41DC65</color>
 </resources>

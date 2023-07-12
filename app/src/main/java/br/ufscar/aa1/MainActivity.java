@@ -1,8 +1,10 @@
 package br.ufscar.aa1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         EditText edtTxtSearch = findViewById(R.id.edtTxtSearch);
         edtTxtSearch.getText().toString();
 
-       Product product = new Product("Ração", "7797", 15, "Ração de gato");
+        Product product = new Product("Ração", "7797", 15, "Ração de gato");
        Product product2 = new Product("Ração", "7797", 10, "Ração de gato");
        List<Product> products = new ArrayList<>();
        products.add(product);
@@ -45,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        int desiredColor = ContextCompat.getColor(this, R.color.darkGreen);
+        fabAddProduct.setImageTintList(ColorStateList.valueOf(desiredColor));
     }
 
     public void onBtnClick(View view) {

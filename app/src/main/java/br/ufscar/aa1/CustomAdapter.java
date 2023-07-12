@@ -42,11 +42,11 @@ public class CustomAdapter extends BaseAdapter {
 
         TextView productName = (TextView) view.findViewById(R.id.txtProductName);
         TextView productDescription = (TextView) view.findViewById(R.id.txtProductDescription);
-        EditText productAmount = (EditText) view.findViewById(R.id.edtTxtProductAmount);
+        //EditText productAmount = (EditText) view.findViewById(R.id.edtTxtProductAmount);
 
         productName.setText(product.getName());
         productDescription.setText(product.getDescription());
-        productAmount.setText(product.getAmount());
+        //productAmount.setText(product.getAmount());
 
         return view;
     }
