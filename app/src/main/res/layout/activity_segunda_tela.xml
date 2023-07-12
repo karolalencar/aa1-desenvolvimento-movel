@@ -21,14 +21,15 @@
 
         <TextView
             android:id="@+id/textViewTitle"
-            android:layout_width="370dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            android:gravity="center"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             android:layout_marginStart="10dp"
             android:fontFamily="@font/montserrat_italic"
-            android:text="Adicionar produto"
+            android:text="@string/add_prod"
             android:textColor="#000000"
             android:textSize="30sp" />
 
@@ -37,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Nome"
+            android:text="@string/form_name"
             android:textSize="16sp" />
 
         <EditText
@@ -50,7 +51,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="79dp"
             android:layout_marginTop="-29dp"
-            android:hint="Digite o nome" />
+            android:hint="@string/desc_name" />
 
         <TextView
             android:id="@+id/textViewCode"
@@ -58,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextName"
             android:layout_marginTop="40dp"
-            android:text="Código"
+            android:text="@string/form_cod"
             android:textSize="16sp" />
 
         <EditText
@@ -70,7 +71,7 @@
             android:layout_marginStart="79dp"
             android:layout_marginTop="-30dp"
             android:gravity="center"
-            android:hint="Digite o código" />
+            android:hint="@string/desc_cod" />
 
         <TextView
             android:id="@+id/textViewQuantity"
@@ -78,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextCode"
             android:layout_marginTop="40dp"
-            android:text="Quantidade"
+            android:text="@string/form_quant"
             android:textSize="16sp" />
 
         <EditText
@@ -90,7 +91,7 @@
             android:gravity="center"
             android:layout_marginStart="100dp"
             android:layout_marginTop="-28dp"
-            android:hint="Digite a quantidade"
+            android:hint="@string/desc_quant"
             android:inputType="number" />
 
         <TextView
@@ -99,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextQuantity"
             android:layout_marginTop="35dp"
-            android:text="Descrição"
+            android:text="@string/form_desc"
             android:textSize="16sp" />
 
         <EditText
@@ -109,7 +110,7 @@
             android:layout_below="@id/textViewDescription"
             android:layout_marginTop="13dp"
             android:background="@drawable/green_border"
-            android:hint="Digite a descrição"
+            android:hint="@string/desc_desc"
             android:gravity="center"
             android:inputType="textMultiLine"
             android:lines="4" />
@@ -121,7 +122,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="#4D41DC65"
-            android:text="Enviar" />
+            android:text="@string/form_env" />
 
 
     </LinearLayout>
