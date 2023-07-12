@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -50,10 +51,5 @@ public class MainActivity extends AppCompatActivity {
 
         int desiredColor = ContextCompat.getColor(this, R.color.darkGreen);
         fabAddProduct.setImageTintList(ColorStateList.valueOf(desiredColor));
-    }
-
-    public void onBtnClick(View view) {
-        TextView txtTitle = findViewById(R.id.txtTitle);
-        txtTitle.setText("Hello");
     }
 }
