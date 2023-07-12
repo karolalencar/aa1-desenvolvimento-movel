@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AA1</string>
-    <string name="title">Produtos</string>
+    <string name="title">PRODUTOS</string>
+    <string name="quantity">Quantidade: </string>
 </resources>
