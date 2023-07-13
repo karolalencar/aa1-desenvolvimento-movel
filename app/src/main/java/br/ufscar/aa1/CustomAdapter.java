@@ -12,10 +12,10 @@ import java.util.List;
 
 public class CustomAdapter extends BaseAdapter {
 
-    private final List<Product> products;
+    private final List<AddProductResult> products;
     private final Activity activity;
 
-    public CustomAdapter(List<Product> products, Activity activity) {
+    public CustomAdapter(List<AddProductResult> products, Activity activity) {
         this.products = products;
         this.activity = activity;
     }
@@ -38,15 +38,15 @@ public class CustomAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = activity.getLayoutInflater().inflate(R.layout.row_product, parent, false);
-        Product product = products.get(position);
+        AddProductResult product = products.get(position);
 
         TextView productName = (TextView) view.findViewById(R.id.txtProductName);
         TextView productDescription = (TextView) view.findViewById(R.id.txtProductDescription);
-        //EditText productAmount = (EditText) view.findViewById(R.id.edtTxtProductAmount);
+        EditText productAmount = (EditText) view.findViewById(R.id.edtTxtProductAmount);
 
         productName.setText(product.getName());
         productDescription.setText(product.getDescription());
-        //productAmount.setText(product.getAmount());
+        productAmount.setText(product.getAmount());
 
         return view;
     }

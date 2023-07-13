@@ -16,7 +16,7 @@ public interface RetrofitInterface {
     Call<AddProductResult> addProduct(@Body HashMap<String, String> map);
 
     @GET("/products")
-    Call<List<Product>> getProducts();
+    Call<List<AddProductResult>> getProducts();
 
     @PATCH("/products/{id}")
     Call<Void> changeProductAmount(@Body HashMap<String, String> map);
