@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AA1</string>
+    <string name="title">PRODUTOS</string>
+    <string name="quantity">Quantidade: </string>
+    <string name="add_prod">Adicionar Produto</string>
+    <string name="form_name">Nome</string>
+    <string name="form_cod">Códigio</string>
+    <string name="form_quant">Quantidade</string>
+    <string name="form_desc">Descrição</string>
+    <string name="desc_name">Digite o nome</string>
+    <string name="desc_cod">Digite o código</string>
+    <string name="desc_quant">Digite a quantidade</string>
+    <string name="desc_desc">Digite a descrição</string>
+    <string name="form_env">Enviar</string>
+
+</resources>

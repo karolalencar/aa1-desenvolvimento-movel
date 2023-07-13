@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
         retrofitInterface = retrofit.create(RetrofitInterface.class);
 
-        EditText edtTxtSearch = findViewById(R.id.edtTxtSearch);
-
         ListView listViewProducts = findViewById(R.id.productsList);
 
         FloatingActionButton fabAddProduct = findViewById(R.id.fabAddProduct);
@@ -80,4 +78,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

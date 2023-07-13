@@ -61,6 +61,7 @@ public class SegundaTela extends AppCompatActivity {
                     public void onResponse(Call<AddProductResult> call, Response<AddProductResult> response) {
                         if (response.code() == 200) {
                             Toast.makeText(SegundaTela.this, "Product added successfully.", Toast.LENGTH_LONG).show();
+                            setResult(RESULT_OK);
                         } else if (response.code() == 400) {
                             Toast.makeText(SegundaTela.this, "Not added successfully.", Toast.LENGTH_LONG).show();
                         } else {
